@@ -1,5 +1,0 @@
-<view class="container" style="position: relative; left: 0rpx; top: 690rpx">
-  <button bindtap="chooseImage">选择图片</button>
-  <image src="{{imageUrl}}" mode="widthFix" hidden="{{!showImage}}"></image>
-  <text>{{uploadResult}}</text>
-</view>
