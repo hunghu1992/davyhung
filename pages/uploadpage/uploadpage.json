@@ -1,5 +1,5 @@
 {
   "title": "上传页面配置",
   "maxUploads": 5,
-  "allowedExtensions": [".jpg", ".png"]
+  "navigationStyle": "custom"
 }

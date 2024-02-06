@@ -1,0 +1,19 @@
+.upload-btn {
+  margin-top: 20px;
+}
+.upload-status {
+  margin-top: 10px;
+}
+.result-message {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.success {
+  background-color: #DFF0D8;
+  color: #3C763D;
+}
+.error {
+  background-color: #F2DEDE;
+  color: #A94442;
+}

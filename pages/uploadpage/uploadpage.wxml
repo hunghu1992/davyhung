@@ -1,0 +1,16 @@
+<view class="container">
+  <button class="upload-btn" bindtap="onUploadClick" style="position: relative; left: 0rpx; top: 622rpx">选择图片并上传</button>
+
+  <!-- 用于显示上传状态的区域 -->
+  <view class="upload-status" wx:if="{{showUploadStatus}}">
+    <text>正在上传...</text>
+    <progress percent="{{uploadProgress}}" active="{{true}}" show-info="{{true}}"></progress>
+  </view>
+
+  <!-- 成功或失败提示信息 -->
+  <view wx:if="{{uploadResultMessage !== ''}}">
+    <view class="result-message {{uploadResultType === 'success' ? 'success' : 'error'}}">
+      {{uploadResultMessage}}
+    </view>
+  </view>
+</view>
