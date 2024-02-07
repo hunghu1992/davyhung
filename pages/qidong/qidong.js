@@ -1,14 +1,13 @@
+// pages/qidong/qidong.js
+const app = getApp();
 Page({
-  data: {
-    imageUrl: '/static/images/qidong.jpg',
-  },
-
-  onLoad: function () {
-    // 设置3秒后自动跳转至uploadpage页面
+  onLoad() {
     setTimeout(() => {
-      wx.navigateTo({
-        url: '/pages/uploadpage/uploadpage',
+      wx.switchTab({
+        url: '/pages/homepage/homepage'
       });
+      // 同步更新TabBar选中状态
+      app.setCurrentTab(0);
     }, 3000);
   }
 });

@@ -1,3 +1,4 @@
+
 const app = getApp();
 
 // 定义环境变量
@@ -5,15 +6,15 @@ const ENV_ID = 'prod-0gi5h53v7bb1a7c8'; // 替换成实际环境ID
 
 // 页面配置
 Page({
+  onLoad() {
+    wx.cloud.init('prod-0gi5h53v7bb1a7c8' )
+    },
+    
   data: {
     showUploadStatus: false,
     uploadProgress: 0,
     uploadResultMessage: '',
     uploadResultType: '',
-  },
-
-  onLoad() {
-    wx.cloud.init({ env: ENV_ID });
   },
 
   startUploadProcess() {

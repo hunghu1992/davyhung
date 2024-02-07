@@ -1,5 +1,5 @@
-<view class="container">
-  <button class="upload-btn" bindtap="onUploadClick" style="position: relative; left: 0rpx; top: 622rpx">选择图片并上传</button>
+<view class="container" style="position: relative; left: 0rpx; top: 296rpx">
+  <button class="upload-btn" bindtap="onUploadClick" style="position: relative; left: 0rpx; top: 560rpx; width: 410rpx; height: 87rpx; display: block; box-sizing: border-box">选择图片并上传</button>
 
   <!-- 用于显示上传状态的区域 -->
   <view class="upload-status" wx:if="{{showUploadStatus}}">
