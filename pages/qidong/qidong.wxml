@@ -1,1 +1,6 @@
-<image style="position: fixed; left: -360rpx; top: 0rpx; width: 1858rpx; height: 1662rpx; display: block; box-sizing: border-box" src="cloud://prod-0gi5h53v7bb1a7c8.7072-prod-0gi5h53v7bb1a7c8-1324010396/uploads/2024-2-6_18:1:40_1.jpg" />
+<!-- index.wxml -->
+<view class="page">
+ <view class="full-screen-container">
+  <image src="/static/images/qidong.jpg" mode="aspectFill" style="width: 100%; height: 100%;"></image>
+ </view>
+</view>
