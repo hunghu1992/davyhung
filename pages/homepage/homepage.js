@@ -1,11 +1,4 @@
 Page({
-  data: {
-    // 页面数据...
-  },
-
-  onLoad: function () {
-    // 页面加载时的初始化逻辑...
-  },
 
   onShow: function () {
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {

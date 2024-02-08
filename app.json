@@ -5,23 +5,23 @@
     "pages/uploadpage/uploadpage"
   ],
   "tabBar": {
-      "custom": true,
-      "color": "#7A7E83",
-      "selectedColor": "#3cc51f",
-      "borderStyle": "black",
-      "list": [
-        {
-          "pagePath": "pages/homepage/homepage",
-          "iconPath": "static/icon/home.png",
-          "selectedIconPath": "static/icon/tohome.png",
-          "text": ""
-        },
-        {
-          "pagePath": "pages/uploadpage/uploadpage",
-          "iconPath": "static/icon/upload.png",
-          "selectedIconPath": "static/icon/toupload.png",
-          "text": ""
-        }
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "list": [
+      {
+      "pagePath": "pages/homepage/homepage",
+      "iconPath": "static/icon/home.png",
+      "selectedIconPath": "static/icon/tohome.png",
+      "text": ""
+      },
+      {
+      "pagePath": "pages/uploadpage/uploadpage",
+      "iconPath": "static/icon/upload.png",
+      "selectedIconPath": "static/icon/toupload.png",
+      "text": ""
+      }
       ]
     }
 }

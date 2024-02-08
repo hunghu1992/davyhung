@@ -9,6 +9,14 @@ Page({
   onLoad() {
     wx.cloud.init('prod-0gi5h53v7bb1a7c8' )
     },
+
+  onShow: function () {
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({
+        selected: 1 // 注意这里应该是对应uploadpage在tabbar.list中的索引，假设uploadpage是第二个，所以为1
+      });
+    }
+  },
     
   data: {
     showUploadStatus: false,

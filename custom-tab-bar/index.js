@@ -4,16 +4,16 @@ Component({
     color: "#7A7E83",
     selectedColor: "#3cc51f",
     list: [{
-      pagePath: "pages/homepage",
+      pagePath: "/pages/homepage/homepage",
       iconPath: "/static/icon/home.png",
       selectedIconPath: "/static/icon/tohome.png",
-      text: ""
-    }, {
-      pagePath: "pages/uploadpage",
+      text: ""}, 
+      {
+      pagePath: "/pages/uploadpage/uploadpage",
       iconPath: "/static/icon/upload.png",
       selectedIconPath: "/static/icon/toupload.png",
       text: ""
-    }]
+      }]
   },
   attached() {
     const appInstance = getApp();
@@ -23,7 +23,7 @@ Component({
     switchTab(e) {
       const data = e.currentTarget.dataset;
       console.log('Switching to page:', data.path); // 添加这行来打印即将跳转的页面路径
-      wx.switchTab({url: data.path});
+      wx.switchTab({ url: data.path });
       this.setData({
         selected: data.index
       });
