@@ -97,10 +97,25 @@ Page({
         cloudPath,
         filePath: file,
         config: { env: "prod-0gi5h53v7bb1a7c8" },
-        success: (res) => resolve(res.fileID),
+        success: (res) => {
+            const fileID = res.fileID;
+            this.saveFileIdToDatabase(fileID); // 新增：保存fileID到数据库
+            resolve(fileID);
+          },
         fail: (e) => reject(new Error(`【文件上传失败】${e.errMsg}`)),
         onProgressUpdate: (res) => this.updateUploadProgress(res.progress),
       });
+    });
+  },
+  // 添加保存file ID到数据库的方法
+  saveFileIdToDatabase(fileID) {
+    wx.cloud.database().collection('photo').add({
+      data: {
+        photoId: fileID,
+        createdAt: new Date(),
+      },
+      success: () => console.log('File ID saved to database successfully.'),
+      fail: console.error,
     });
   }
 });
