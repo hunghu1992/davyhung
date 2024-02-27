@@ -1,1 +1,14 @@
-<text style="position:relative;">666</text>
+<!-- 引入swiper组件 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" vertical="{{false}}" style="position: relative; left: 0rpx; top: 285rpx; width: 750rpx; height: 810rpx; display: block; box-sizing: border-box">
+  <swiper-item wx:for="{{imageList}}" wx:key="*this" style="width: 750rpx; height: 516rpx; display: block; box-sizing: border-box; left: 0rpx; top: 241rpx; position: absolute">
+    <image src="{{item}}" mode="aspectFit" class="swiper-image" style="width: 750rpx; height: 1200rpx; display: flex; box-sizing: border-box; position: relative; left: 0rpx; top: -358rpx"></image>
+  </swiper-item>
+</swiper>
+<image style="position: relative; left: 270rpx; top: -683rpx; width: 212rpx; height: 112rpx; display: inline-block; box-sizing: border-box" src="/static/images/logo.png"/>
+
+
+
+
+
+
+<!-- 在.wxss文件中添加样式以实现垂直居中 -->
